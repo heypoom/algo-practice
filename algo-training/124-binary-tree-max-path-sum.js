@@ -4,33 +4,30 @@ const {TreeNode, make, log} = require('../tree-helper')
 // Space Complexity: O(1), no additional space required.
 
 function maxPathSum(root) {
-	let max = null
+  let max = null
 
-	function sumOf(node) {
-		if (!node) return 0
+  function sumOf(node) {
+    if (!node) return 0
 
-		let left = sumOf(node.left)
-		let right = sumOf(node.right)
+    let left = sumOf(node.left)
+    let right = sumOf(node.right)
 
-		let maxChild = Math.max(
-			Math.max(left, right) + node.val,
-			node.val
-		)
+    // เทียบว่าระหว่างรวม node ฝั่งซ้ายหรือขวา กับไม่รวม อะไรมากกว่ากัน
+    let maxChild = Math.max(Math.max(left, right) + node.val, node.val)
 
-		let maxSum = Math.max(
-			maxChild,
-			left + node.val + right
-		)
+    // เทียบว่าระหว่างรวมหมด กับเอาแค่บางฝั่ง อะไรมากกว่ากัน
+    let maxSum = Math.max(maxChild, left + node.val + right)
 
-		max = Math.max(max, maxSum)
+    // เก็บค่า maxSum ที่มากที่สุด
+    max = Math.max(max, maxSum)
 
-		return maxChild
-	}
+    // ส่งฝั่งที่มากที่สุดไป
+    return maxChild
+  }
 
-	sumOf(root)
+  sumOf(root)
 
-	return max
+  return max
 }
 
 console.log(maxPathSum(make(-10, 3, 5, null, null, 8, 9)))
-

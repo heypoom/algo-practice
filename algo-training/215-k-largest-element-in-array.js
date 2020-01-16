@@ -1,4 +1,3 @@
-// Perform the partition for given array. Move elements such that for given pivot all elements on its left are less than or equal to and elements on right are greater than it.
 function partition(a, low, high) {
   if (high == low) return low
 
@@ -25,17 +24,15 @@ function partition(a, low, high) {
   return j
 }
 
-let list = [6, 5, 4, 3, 2, 1]
-let p = partition(list, 0, list.length - 1)
-
 function find(a, k, low = 0, high = a.length - 1) {
-  if (a.length < 1 || k < 1 || k > a.length || low > high) return -1
+  if (a.length < 1) return -1
+  if (k < 1 || k > a.length) return -1
+  if (low > high) return -1
 
   let index = a.length - k
   let part = partition(a, low, high)
-  console.log(part, a)
 
-  if (part == index) return a[part]
+  if (part === index) return a[part]
 
   if (part < index) return find(a, k, part + 1, high)
 

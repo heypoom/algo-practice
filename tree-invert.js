@@ -10,12 +10,8 @@ function invert(node) {
 
   node.right = node.left
   node.left = temp
+
+  return node
 }
 
-function invertT(root) {
-  invert(root)
-
-  return root
-}
-
-log(invertT(make(1, 2, 3, 4, 5, 6)))
+log(invert(make(1, 2, 3, 4, 5, 6)))

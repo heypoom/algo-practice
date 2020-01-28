@@ -67,6 +67,13 @@ Space Complexity: O(N) where N is length of array, which is used for storing mem
 
 - [Solution](307p-range-sum-query-static.js)
 
+## Three Sum
+
+Time Complexity: O(N^2) where N is the length of input array.
+Space Complexity: O(1) -- no extra space, excluding the answer array.
+
+- [Solution](three-sum.js)
+
 ## 689. Maximum Sum of 3 Non-Overlapping Subarrays.
 
 Time Complexity: O(N) where N is length of array.
@@ -210,13 +217,6 @@ Space Complexity: O(1)
 ## Get intersection of a linked list.
 
 - [Solution](ll-intersect.js)
-
-## Three Sum
-
-Time Complexity: O(N^2) where N is the length of input array.
-Space Complexity: O(1) -- no extra space, excluding the answer array.
-
-- [Solution](three-sum.js)
 
 ## Invert a linked list.
 

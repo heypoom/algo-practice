@@ -1,18 +1,27 @@
 function segmentWord(input, words) {
-  if (input.length === 0) return true
+  let hash = {}
 
-  let dp = Array(input.length + 1).fill(false)
+  for (let word of words) {
+    hash[word] = true
+  }
 
-  for (let i = 1; i <= input.length; i++) {
-    if (!dp[i] && words.includes(input.slice(0, i))) dp[i] = true
+  let target = ''
+  let answer = ''
 
-    if (dp[i]) {
-      if (i === input.length) return true
+  for (let token of input) {
+    target += token
+
+    if (hash[target]) {
+      answer += target + ' '
+      target = ''
     }
   }
+
+  return answer.trim()
 }
 
 console.log(segmentWord('hellohowareyou', ['are', 'you', 'how', 'hello']))
 console.log(segmentWord('whoareyou', ['are', 'you', 'who']))
 console.log(segmentWord('whoareyou', ['whoar', 'who', 'are', 'reyo', 'you']))
 console.log(segmentWord('whereami', ['am', 'i', 'where']))
+console.log(segmentWord('whereazzzzzmi', ['am', 'i', 'where']))

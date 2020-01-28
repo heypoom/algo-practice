@@ -5,37 +5,31 @@
 // When are there more than k people in the restaurant?
 
 function getHighVisitTimes(n, k, records) {
-	records.sort((a, b) => a[0] - b[0])
+  records.sort((a, b) => a[0] - b[0])
 
-	let visits = 1
-	let answer = []
+  let visits = 1
+  let answer = []
 
-	let i = 1
-	let j = 0
+  let i = 1
+  let j = 0
 
-	while (i < n && j < n) {
-		if (records[i][0] <= records[j][1]) {
-			visits++
+  while (i < n && j < n) {
+    if (records[i][0] <= records[j][1]) {
+      visits++
 
-			if (visits >= k) {
-				max = visits
-				answer.push([records[i][0], records[j][1]])
-			}
+      if (visits >= k) {
+        max = visits
+        answer.push([records[i][0], records[j][1]])
+      }
 
-			i++
-		} else {
-			visits--
-			j++
-		}
-	}
+      i++
+    } else {
+      visits--
+      j++
+    }
+  }
 
-	return answer
+  return answer
 }
 
-console.log(getHighVisitTimes(4, 2, [
-	[1, 3],
-	[4, 6],
-	[2, 4],
-	[5, 9],
-])) // [[2, 3], [4, 4], [5, 6]]
-
+console.log(getHighVisitTimes(4, 2, [[1, 3], [4, 6], [2, 4], [5, 9]])) // [[2, 3], [4, 4], [5, 6]]

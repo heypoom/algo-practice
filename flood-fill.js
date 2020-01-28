@@ -1,55 +1,40 @@
-const {make, log} = require('./grid-helper')
+const {make, log} = require('../grid-helper')
 
-function fill(grid, x, y, newColor) {
-  let visited = grid.map(x => x.map(y => false))
+function floodFill(grid, x, y, newColor) {
+  let visited = grid.map(r => r.map(() => false))
+  let oldColor = grid[y][x]
 
-  function floodFill(grid, x, y, newColor, oldColor = grid[y][x]) {
-    if (x < 0 || y < 0 || x >= grid[0].length || y >= grid.length) return
+  function fill(x, y) {
+    if (x < 0 || y < 0 || y >= grid.length || x >= grid[y].length) return
+
     if (visited[y][x]) return
-    if (grid[y][x] !== oldColor) return
-
     visited[y][x] = true
+
+    if (grid[y][x] !== oldColor) return
     grid[y][x] = newColor
 
-    floodFill(grid, x - 1, y, newColor, oldColor)
-    floodFill(grid, x + 1, y, newColor, oldColor)
-    floodFill(grid, x, y - 1, newColor, oldColor)
-    floodFill(grid, x, y + 1, newColor, oldColor)
+    fill(x - 1, y)
+    fill(x + 1, y)
+    fill(x, y - 1)
+    fill(x, y + 1)
   }
 
-  floodFill(grid, x, y, newColor)
+  fill(x, y)
 
   return grid
 }
 
 log(
-  fill(
+  floodFill(
     make(`
-11101
-00001
+11100
+11001
+00011
 00111
-01110
-00111
+10000
 `),
-    4,
-    4,
-    2,
-  ),
-)
-
-console.log()
-
-log(
-  fill(
-    make(`
-00010
-01100
-00110
-01100
-00000
-`),
-    2,
-    2,
-    2,
+    0,
+    0,
+    3,
   ),
 )

@@ -1,3 +1,9 @@
+// Time Complexity:
+// O(R * C) for building memo tables, where R is row count and C is column count
+// O(N) lookup where N is row count.
+
+// Space Complexity: O(R * C) where R is row count and C is column count
+
 function createSumRegion(input) {
   if (input.length === 0 || input[0].length === 0) return () => 0
 

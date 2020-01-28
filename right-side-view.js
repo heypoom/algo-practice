@@ -4,8 +4,9 @@ var rightSideView = function(root) {
   return result
 }
 
-var dfs = function(node, result, level) {
+function dfs(node, result, level) {
   if (node === null) return
+
   result[level] = node.val
   dfs(node.left, result, level + 1)
   dfs(node.right, result, level + 1)

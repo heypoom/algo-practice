@@ -15,9 +15,6 @@ const {performance} = require('perf_hooks')
 //   [-1, -1, 2]
 // ]
 
-// Time: O(N^2)
-// Extra Space: O(1) -- no extra space, excluding the answer array.
-
 function sum(list) {
   let answer = []
   list.sort((a, b) => a - b)

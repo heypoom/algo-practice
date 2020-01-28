@@ -1,9 +1,12 @@
 const {TreeNode, make, log} = require('../tree-helper')
 
-function mps(root) {
+// Time Complexity: O(N) where N is amount of node in the tree.
+// Space Complexity: O(1), no additional space required.
+
+function maxPathSum(root) {
   let answer = -1
 
-  function sum(node) {
+  function sumOf(node) {
     if (!node) return 0
 
     let val = node.val
@@ -23,11 +26,11 @@ function mps(root) {
     return l + val
   }
 
-  sum(root)
+  sumOf(root)
 
   return answer
 }
 
-console.log(mps(make(1, 2, 3))) // 6
-console.log(mps(make(-10, 9, 20, null, null, 15, 7))) // 42
-console.log(mps(make(1, 2, 3, 4, 5, 6))) // 21
+console.log(maxPathSum(make(1, 2, 3))) // 6
+console.log(maxPathSum(make(-10, 9, 20, null, null, 15, 7))) // 42
+console.log(maxPathSum(make(1, 2, 3, 4, 5, 6))) // 21

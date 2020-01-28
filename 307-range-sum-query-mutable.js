@@ -1,5 +1,4 @@
 // Time Complexity: O(N) where N is length of array, used in preprocessing and update. O(1) for lookup
-
 // Space Complexity: O(N) where N is length of array, which is used for storing memoized data.
 
 function createSumRange(input) {

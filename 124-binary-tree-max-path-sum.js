@@ -30,4 +30,7 @@ function maxPathSum(root) {
   return max
 }
 
+console.log(maxPathSum(make(1, 2, 3))) // 6
+console.log(maxPathSum(make(-10, 9, 20, null, null, 15, 7))) // 42
+console.log(maxPathSum(make(1, 2, 3, 4, 5, 6))) // 21
 console.log(maxPathSum(make(-10, 3, 5, null, null, 8, 9)))

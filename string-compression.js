@@ -15,8 +15,6 @@ function compress(str) {
 
   result += prev + count
 
-  console.log('//', str, '->', result)
-
   if (result.length > str.length) return str
 
   return result

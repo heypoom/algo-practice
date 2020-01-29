@@ -22,4 +22,3 @@ console.log(reverse(1234)) // 4231
 console.log(reverse(-1234)) // -4321
 console.log(reverse(10)) // 1
 console.log(reverse(0)) // 0
-

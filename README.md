@@ -1,5 +1,38 @@
 # Algorithm Practice
 
+## 1249. Minimum Remove to Make Valid Parentheses
+
+- Time Complexity: O(N) where N is the number of characters.
+
+- Space Complexity: O(N) for storing stack of parentheses.
+
+- Time: 26 mins
+- Tags: Stack
+
+- [Solution](1249-minimum-remove-to-make-valid-parentheses.js)
+
+## 986. Interval List Intersections
+
+- Time Complexity: O(A + B) where A and B are length of input intervals.
+
+- Space Complexity: O(1), no additional space required.
+
+- Time: 32 mins
+- Tags: Interval
+
+- [Solution](986-interval-list-intersections.js)
+
+## 133. Clone Graph
+
+- Time Complexity: O(V + E) where V is vertex count, and E is edge count.
+
+- Space Complexity: O(V) where V is vertex stored in the BFS queue.
+
+- Time: 28 mins
+- Tags: Graph, BFS
+
+- [Solution](133-clone-graph.js)
+
 ## 41. First Missing Positive Integer
 
 - Time Complexity: O(N) where N is count of numbers

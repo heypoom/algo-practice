@@ -18,10 +18,17 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 ## Backlog (Haven't tried these yet, but I want to try next.)
 
-- Accounts Merge
 - Meeting Rooms II
 - Course Schedule II
 - Minimum Window Substring
+
+## 721. Accounts Merge
+
+- Time: 50 mins.
+
+- Tags: Graph, HashMap, Set, BFS
+
+- [Solution](721-accounts-merge.js)
 
 ## 42. Trapping Rain Water
 

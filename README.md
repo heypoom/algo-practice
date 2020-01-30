@@ -4,13 +4,13 @@
 
 These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't figure out how to solve or approach the problem.
 
-- Best Time to Buy and Sell Stock III: I knew this must use DP with 2-dimensional array, but can't figure out how.
+- Best Time to Buy and Sell Stock III: I knew this must use DP with 2-dimensional array, but can't figure out how. -> `Try doing this one (https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) in O(N) first`
 
-- Task Scheduler: Can't figure out a way to solve this.
+- Task Scheduler: Can't figure out a way to solve this. -> `Please read the solution`
 
-- 416. Partition Equal Subset Sum: I tried using quick sum + iterate and pick a pivot, but did not work if there is more than 1 element in subarray. I know this is dynamic programming for sure, but did not know how to approach it.
+- 416. Partition Equal Subset Sum: I tried using quick sum + iterate and pick a pivot, but did not work if there is more than 1 element in subarray. I know this is dynamic programming for sure, but did not know how to approach it. -> `Is there any subset that sums to sum(all)/2 ?`
 
-- 317. Shortest Distance from All Buildings: I know this is definitely a graph problem, but don't know how to approach it.
+- 317. Shortest Distance from All Buildings: I know this is definitely a graph problem, but don't know how to approach it. -> `Do BFS from each of the buildings.`
 
 ## Attempting
 
@@ -24,6 +24,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 ## 721. Accounts Merge
 
+- Pong: All good
+
 - Time: 50 mins.
 
 - Tags: Graph, HashMap, Set, BFS
@@ -31,6 +33,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [Solution](721-accounts-merge.js)
 
 ## 42. Trapping Rain Water
+
+- Pong: Please do this within O(N) time complexity
 
 - Time Complexity: O(N ^ 2) where N is the length of input height array.
 
@@ -43,11 +47,15 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 ## 10. Regular Expression Matching
 
+- Pong: Incorrect. Please submit it to Leetcode first before putting it here.
+
 Note: I looked at the solution and tried to understand how it works. Didn't fully grasp how this works yet.
 
 - [Solution](10-regex-matching.js)
 
 ## 124. Binary Tree Maximum Path Sum
+
+- Pong: Incorrect. Please submit it to Leetcode first before putting it here.
 
 - Time Complexity: O(N) where N is amount of node in the tree.
 
@@ -59,6 +67,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## 1249. Minimum Remove to Make Valid Parentheses
 
+- Pong: All good
+
 - Time Complexity: O(N) where N is the number of characters.
 
 - Space Complexity: O(N) for storing stack of parentheses.
@@ -69,6 +79,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution](1249-minimum-remove-to-make-valid-parentheses.js)
 
 ## 986. Interval List Intersections
+
+- Pong: All good
 
 - Time Complexity: O(A + B) where A and B are length of input intervals.
 
@@ -141,6 +153,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## 304. Range Sum Query 2D Immutable
 
+- Pong: Incorrect. Please submit it to Leetcode first before putting it here. Please do the lookup within O(1)
+
 - Time Complexity:
   - O(R * C) for building memo tables, where R is row count and C is column count.
   - O(N) lookup where N is row count.
@@ -186,6 +200,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution](three-sum.js)
 
 ## 689. Maximum Sum of 3 Non-Overlapping Subarrays.
+
+- Pong: Incorrect. Please submit it to Leetcode first before putting it here.
 
 - Time Complexity: O(N) where N is length of array.
 
@@ -241,15 +257,23 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Num Decodings
 
+- Pong: Incorrect. Please submit it to Leetcode first before putting it here.
+
+- https://leetcode.com/problems/decode-ways/
+
 - Tags: HashMap
 
 - [Solution](num-decodings.js)
 
 ## Minimum Window Substring
 
+- Pong: Incorrect. Please submit it to Leetcode first before putting it here. `console.log(substr('ADOBECODEBANC', 'ABC')) -> ADOBEC`
+
 - [Solution](minimum-window-substring.js)
 
 ## 7. Merge Binary Search Tree.
+
+- Pong: All Good
 
 - Tags: Binary Search Tree, Recursion
 
@@ -257,15 +281,21 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Add two numbers as a linked list.
 
+- Pong: All Good
+
 - Tags: Linked List
 
 - [Solution](add-two-numbers-ll.js)
 
 ## Minimal Tree: Create a BST with minimal height.
 
+- Pong: Where's the solution?
+
 - Tags: Binary Search Tree, Recursion
 
 ## Num Islands
+
+- Pong: Try to do this with O(1) extra memory
 
 - Tags: 2D Map, Recursion
 
@@ -285,11 +315,15 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Binary Search
 
+- Pong: All Good
+
 - Tags: Binary Search
 
 - [Solution](binary-search.js)
 
 ## Sum of a Binary Tree
+
+- Pong: All Good
 
 - Tags: Binary Tree, Recursion
 
@@ -349,6 +383,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Random function with blacklisting
 
+- Pong: Is incorrect; `console.log(createRandom(10, [2, 4, 6, 8])()) -> got 2`
+
 - Tags: HashMap
 
 - [Solution](random-function-with-blacklist.js)
@@ -366,6 +402,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution](is-tree-balanced.js)
 
 ## Is all characters in string unique
+
+- Pong: All good
 
 - Tags: String
 
@@ -421,6 +459,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Find longest substring in a string.
 
+- Pong: I'm not sure what the question is
+
 - Tags: String, HashMap
 
 - [Solution](longest-substring.js)
@@ -433,11 +473,15 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Max Stock Profit
 
+- Pong: Please change this to O(n)
+
 - Tags: Dynamic Programming
 
 - [Solution](max-profit.js)
 
 ## Tree Traversal with BFS/DFS
+
+- Pong: All good
 
 - Tags: Binary Tree
 
@@ -451,11 +495,15 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## String Palindrome Permutation
 
+- Pong: All good
+
 - Tags: HashMap
 
 - [Solution](palind-perm.js)
 
 ## Is String Palindrome
+
+- Pong: All good
 
 - [Solution](palindrome.js)
 
@@ -465,22 +513,30 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Implement Quicksort
 
+- Pong: All good
+
 - Tags: Sorting
 
 - [Solution](quick-sort.js)
 
 ## Reverse Integer
 
+- Pong: All good
+
 - [Solution](reverse-integer.js)
 - [Solution B](reverse-integer-b.js)
 
 ## Remove all occurences of duplicates from a linked list
+
+- Pong: This one is incorrect. `log(removeDupes(make(0, 0)))`
 
 - Tags: Linked List
 
 - [Solution](remove-all-dupes.js)
 
 ## Remove the duplicate elements from a linked list
+
+- Pong: This isn't a linked list..  Do you want to rewrite this one with a linked list instead of an array?
 
 - Tags: Linked List
 
@@ -494,11 +550,15 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Matrix Rotation
 
+- Pong: Try doing this without using extra memory
+
 - Tags: 2D Grid
 
 - [Solution](rotate-matrix.js)
 
 ## Invert a Binary Tree
+
+- Pong: All good
 
 - Tags: Binary Tree
 

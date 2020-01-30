@@ -1,5 +1,55 @@
 # Algorithm Practice
 
+## Questions I'm still stuck on.
+
+These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't figure out how to solve or approach the problem.
+
+- Best Time to Buy and Sell Stock III: I knew this must use DP with 2-dimensional array, but can't figure out how.
+
+- Task Scheduler: Can't figure out a way to solve this.
+
+- 416. Partition Equal Subset Sum: I tried using quick sum + iterate and pick a pivot, but did not work if there is more than 1 element in subarray. I know this is dynamic programming for sure, but did not know how to approach it.
+
+- 317. Shortest Distance from All Buildings: I know this is definitely a graph problem, but don't know how to approach it.
+
+## Attempting
+
+- 301. Remove Invalid Parentheses
+
+## Backlog (Haven't tried these yet, but I want to try next.)
+
+- Accounts Merge
+- Meeting Rooms II
+- Course Schedule II
+- Minimum Window Substring
+
+## 42. Trapping Rain Water
+
+- Time Complexity: O(N ^ 2) where N is the length of input height array.
+
+- Space Complexity: O(1), no additional space required.
+
+- Time: 40 mins.
+- Note: This is brute force. I think dynamic programming is possible, will try it later.
+
+- [Solution](42-trapping-rain-water-brute-force.js)
+
+## 10. Regular Expression Matching
+
+Note: I looked at the solution and tried to understand how it works. Didn't fully grasp how this works yet.
+
+- [Solution](10-regex-matching.js)
+
+## 124. Binary Tree Maximum Path Sum
+
+- Time Complexity: O(N) where N is amount of node in the tree.
+
+- Space Complexity: O(1), no additional space required.
+
+- Tags: Tree, Binary Tree, Dynamic Programming, Recursion
+
+- [Solution](124-binary-tree-max-path-sum.js)
+
 ## 1249. Minimum Remove to Make Valid Parentheses
 
 - Time Complexity: O(N) where N is the number of characters.
@@ -61,17 +111,6 @@
 - Tags: Intervals, Two Pointers
 
 - [Solution](restaurant-high-visit-times.js)
-
-## 124. Binary Tree Maximum Path Sum
-
-- Time Complexity: O(N) where N is amount of node in the tree.
-
-- Space Complexity: O(1), no additional space required.
-
-- Tags: Tree, Binary Tree, Dynamic Programming, Recursion
-
-- [Solution](124-binary-tree-max-path-sum.js)
-- [Solution B](124-binary-tree-max-path-sum-b.js)
 
 ## 128. Longest Sequence of Consequtive Integers.
 

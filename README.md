@@ -289,7 +289,7 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Minimal Tree: Create a BST with minimal height.
 
-- Pong: Where's the solution?
+- [Solution](minimal-tree-bst-minimal-height.js)
 
 - Tags: Binary Search Tree, Recursion
 
@@ -508,6 +508,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution](palindrome.js)
 
 ## Path with Maximum Gold
+
+- Pong: Incorrect; Syntax error
 
 - [Solution](path-maximum-gold.js)
 

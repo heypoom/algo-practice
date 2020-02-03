@@ -6,15 +6,23 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 - Best Time to Buy and Sell Stock III: I knew this must use DP with 2-dimensional array, but can't figure out how. -> `Try doing this one (https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) in O(N) first`
 
-## Attempting
-
-- 301. Remove Invalid Parentheses
-
 ## Backlog (Haven't tried these yet, but I want to try next.)
 
+- 301. Remove Invalid Parentheses
 - Meeting Rooms II
 - Course Schedule II
 - Minimum Window Substring
+
+## 133. Clone Graph
+
+- Time Complexity: O(V + E) where V is vertex count, and E is edge count.
+- Space Complexity: O(V) where V is vertex stored in the BFS queue.
+
+- Time: 28 mins
+- Tags: Graph, BFS
+
+- [LeetCode Submmission](https://leetcode.com/submissions/detail/299880929)
+- [Solution](133-clone-graph.js)
 
 ## 317. Shortest Distance from All Buildings
 
@@ -116,17 +124,6 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - Tags: Interval
 
 - [Solution](986-interval-list-intersections.js)
-
-## 133. Clone Graph
-
-- Time Complexity: O(V + E) where V is vertex count, and E is edge count.
-
-- Space Complexity: O(V) where V is vertex stored in the BFS queue.
-
-- Time: 28 mins
-- Tags: Graph, BFS
-
-- [Solution](133-clone-graph.js)
 
 ## 41. First Missing Positive Integer
 

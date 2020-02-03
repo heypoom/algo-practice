@@ -67,6 +67,17 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [LeetCode Submission](https://leetcode.com/submissions/detail/299859922)
 - [Solution](621-task-scheduler.js)
 
+## 15. Three Sum
+
+- Time: 41 mins.
+- Time Complexity: O(N^2) where N is the length of input array.
+- Space Complexity: O(1) -- no extra space, excluding the answer array.
+
+- Tags: Dynamic Programming, Two Pointers
+
+- [Solution](15-three-sum.js)
+- [LeetCode Submission](https://leetcode.com/submissions/detail/299891170)
+
 ## 721. Accounts Merge
 
 - Pong: All good
@@ -210,16 +221,6 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - Tags: Dynamic Programming
 
 - [Solution](307p-range-sum-query-static.js)
-
-## Three Sum
-
-- Time Complexity: O(N^2) where N is the length of input array.
-
-- Space Complexity: O(1) -- no extra space, excluding the answer array.
-
-- Tags: Dynamic Programming, Two Pointers
-
-- [Solution](three-sum.js)
 
 ## 689. Maximum Sum of 3 Non-Overlapping Subarrays.
 

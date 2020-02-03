@@ -67,6 +67,16 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [LeetCode Submission](https://leetcode.com/submissions/detail/299859922)
 - [Solution](621-task-scheduler.js)
 
+## 42. Trapping Rain Water
+
+- Time Complexity: O(N) where N is the length of input height array.
+- Space Complexity: O(1), no additional space required.
+
+- Time: 50 mins.
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/299893222)
+- [Solution](42-trapping-rain-water.js)
+
 ## 15. Three Sum
 
 - Time: 41 mins.
@@ -87,19 +97,6 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - Tags: Graph, HashMap, Set, BFS
 
 - [Solution](721-accounts-merge.js)
-
-## 42. Trapping Rain Water
-
-- Pong: Please do this within O(N) time complexity
-
-- Time Complexity: O(N ^ 2) where N is the length of input height array.
-
-- Space Complexity: O(1), no additional space required.
-
-- Time: 40 mins.
-- Note: This is brute force. I think dynamic programming is possible, will try it later.
-
-- [Solution](42-trapping-rain-water-brute-force.js)
 
 ## 10. Regular Expression Matching
 

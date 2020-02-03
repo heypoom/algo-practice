@@ -1,4 +1,4 @@
-# Algorithm Practice
+ Algorithm Practice
 
 ## Questions I'm still stuck on.
 
@@ -12,17 +12,6 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - Meeting Rooms II
 - Course Schedule II
 - Minimum Window Substring
-
-## 133. Clone Graph
-
-- Time Complexity: O(V + E) where V is vertex count, and E is edge count.
-- Space Complexity: O(V) where V is vertex stored in the BFS queue.
-
-- Time: 28 mins
-- Tags: Graph, BFS
-
-- [LeetCode Submmission](https://leetcode.com/submissions/detail/299880929)
-- [Solution](133-clone-graph.js)
 
 ## 317. Shortest Distance from All Buildings
 
@@ -44,6 +33,28 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 - [LeetCode Submission](https://leetcode.com/submissions/detail/299863102)
 - [Solution](416-can-partition.js)
+
+## 124. Binary Tree Maximum Path Sum
+
+- Time: 30 mins
+- Time Complexity: O(N) where N is amount of node in the tree.
+- Space Complexity: O(1), no additional space required.
+
+- Tags: Tree, Binary Tree, Dynamic Programming, Recursion
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/299882550)
+- [Solution](124-binary-tree-max-path-sum.js)
+
+## 133. Clone Graph
+
+- Time Complexity: O(V + E) where V is vertex count, and E is edge count.
+- Space Complexity: O(V) where V is vertex stored in the BFS queue.
+
+- Time: 28 mins
+- Tags: Graph, BFS
+
+- [LeetCode Submmission](https://leetcode.com/submissions/detail/299880929)
+- [Solution](133-clone-graph.js)
 
 # 621. Task Scheduler
 
@@ -86,18 +97,6 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 Note: I looked at the solution and tried to understand how it works. Didn't fully grasp how this works yet.
 
 - [Solution](10-regex-matching.js)
-
-## 124. Binary Tree Maximum Path Sum
-
-- Pong: Incorrect. Please submit it to Leetcode first before putting it here.
-
-- Time Complexity: O(N) where N is amount of node in the tree.
-
-- Space Complexity: O(1), no additional space required.
-
-- Tags: Tree, Binary Tree, Dynamic Programming, Recursion
-
-- [Solution](124-binary-tree-max-path-sum.js)
 
 ## 1249. Minimum Remove to Make Valid Parentheses
 

@@ -1,10 +1,10 @@
-const {TreeNode, make, log} = require('../tree-helper')
+const {TreeNode, make, log} = require('./tree-helper')
 
 // Time Complexity: O(N) where N is amount of node in the tree.
 // Space Complexity: O(1), no additional space required.
 
 function maxPathSum(root) {
-  let max = null
+  let max = -Infinity
 
   function sumOf(node) {
     if (!node) return 0
@@ -30,6 +30,7 @@ function maxPathSum(root) {
   return max
 }
 
+console.log(maxPathSum(make(-3))) // -3
 console.log(maxPathSum(make(1, 2, 3))) // 6
 console.log(maxPathSum(make(-10, 9, 20, null, null, 15, 7))) // 42
 console.log(maxPathSum(make(1, 2, 3, 4, 5, 6))) // 21

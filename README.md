@@ -6,10 +6,6 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 - Best Time to Buy and Sell Stock III: I knew this must use DP with 2-dimensional array, but can't figure out how.
 
-- Task Scheduler: Can't figure out a way to solve this.
-
-- 416. Partition Equal Subset Sum: I tried using quick sum + iterate and pick a pivot, but did not work if there is more than 1 element in subarray. I know this is dynamic programming for sure, but did not know how to approach it.
-
 - 317. Shortest Distance from All Buildings: I know this is definitely a graph problem, but don't know how to approach it.
 
 ## Attempting
@@ -21,6 +17,38 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - Meeting Rooms II
 - Course Schedule II
 - Minimum Window Substring
+
+## 317. Shortest Distance from All Buildings
+
+- Time: 56 mins
+- Time Complexity: O((R * C)^2), where R is row length and C is column length.
+- Space Complexity: O(R * C), extra space is used for an array storing distance for each points.
+
+- Tags: Graph, BFS, 2D Grid
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/299878784)
+- [Solution](317-shortest-distance-from-all-buildings.js)
+
+# 416. Partition Equal Subset Sum
+
+- Time: 43 mins.
+- Time Complexity: O(N ^ 2) where N is length of input array, worst case.
+
+- Tags: Recursion, Dynamic Programming, HashMap
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/299863102)
+- [Solution](416-can-partition.js)
+
+# 621. Task Scheduler
+
+- Time: 30 mins.
+- Time Complexity: O(N) where N is the number of tasks given.
+- Space Complexity: O(1), because the additional array space is constantly 26.
+
+- Tags: Dynamic Programming
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/299859922)
+- [Solution](621-task-scheduler.js)
 
 ## 721. Accounts Merge
 

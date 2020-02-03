@@ -1,28 +1,28 @@
 class Graph {
   constructor() {
-		this.nodes = new Map()
-	}
+    this.nodes = new Map()
+  }
 
-	add(name, node) {
-		node.name = name
-		this.nodes.set(name, node)
-	}
+  add(name, node) {
+    node.name = name
+    this.nodes.set(name, node)
+  }
 
-	has(name) {
-		return this.nodes.has(name)
-	}
+  has(name) {
+    return this.nodes.has(name)
+  }
 
-	get(name) {
-		return this.nodes.get(name)
-	}
+  get(name) {
+    return this.nodes.get(name)
+  }
 
-	getNodes() {
-		return [...this.nodes.values()]
-	}
+  getNodes() {
+    return [...this.nodes.values()]
+  }
 
-	addEdge(name, node) {
-		this.nodes.get(name).addNode(node)
-	}
+  addEdge(name, node) {
+    this.nodes.get(name).addNode(node)
+  }
 }
 
 class Node {
@@ -30,12 +30,12 @@ class Node {
     this.val = val
     this.children = []
     this.visited = false
-		this.name = name
+    this.name = name
   }
 
-	get(node) {
-		return this.children.find(c => c === node)
-	}
+  get(node) {
+    return this.children.find(c => c === node)
+  }
 
   addNode(node) {
     this.children.push(node)

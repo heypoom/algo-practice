@@ -4,19 +4,30 @@
 // The array size will not exceed 200.
 
 function canPartition(nums) {
-  nums.sort()
+	let sum = nums.reduce((a, b) => a + b, 0)
+	if (sum % 2 === 1) return false
 
-  let qs = [nums[0]]
+	nums.sort()
 
-  for (let i = 1; i < nums.length; i++) {
-    qs[i] = nums[i] + qs[i - 1]
-  }
+	let mid = Math.floor(sum / 2)
+	let cache = {}
 
-  for (let pivot = 0; pivot < nums.length; pivot++) {
-    if (qs[qs.length - 1] - nums[pivot] === nums[pivot]) return true
-  }
+	function check(sum, i) {
+		let key = sum + '|' + i
+		if (key in cache) return cache[key]
 
-  return false
+		if (sum === mid) return true
+		if (sum > mid) return false
+		if (i < 0) return false
+
+		cache[key] = check(sum + nums[i], i - 1) || check(sum, i - 1)
+
+		console.log('CL', Object.keys(cache).length)
+
+		return cache[key]
+	}
+
+	return check(0, nums.length - 1)
 }
 
 // True ([1, 5, 5] and [11])
@@ -24,3 +35,4 @@ console.log(canPartition([1, 5, 11, 5]))
 
 console.log(canPartition([1, 2, 3, 5])) // False
 console.log(canPartition([3, 1, 2, 2])) // True
+console.log(canPartition([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,100]))

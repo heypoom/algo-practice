@@ -1,17 +1,49 @@
- Algorithm Practice
+# Algorithm Practice
 
 ## Questions I'm still stuck on.
 
 These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't figure out how to solve or approach the problem.
 
-- Best Time to Buy and Sell Stock III: I knew this must use DP with 2-dimensional array, but can't figure out how. -> `Try doing this one (https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) in O(N) first`
+- Currently Empty.
 
 ## Backlog (Haven't tried these yet, but I want to try next.)
 
-- 301. Remove Invalid Parentheses
 - Meeting Rooms II
 - Course Schedule II
 - Minimum Window Substring
+
+## 123. Best Time to Buy and Sell Stock III
+
+- Time: 70 mins
+- Time Complexity: O(N) where N is the length of input array.
+- Space Complexity: O(1), no extra space.
+
+- Tags: Dynamic Programming
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/300428259)
+- [Solution](123-best-time-to-buy-and-sell-stock-iii.js)
+
+## 543. Diameter of Binary Tree
+
+- Time: 22 mins
+- Time Complexity: O(N) where N is count of nodes in the tree.
+- Space Complexity: O(1)
+
+- Tags: Binary Tree, Recursion
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/300424207)
+- [Solution](543-diameter-of-binary-tree.js)
+
+## 32. Longest Valid Parentheses
+
+- Time: 48 mins.
+- Time Complexity: O(N) where N is string length
+- Space Complexity: O(N) where N is string length, used for stack array.
+
+- Tags: Stack
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/300421410)
+- [Solution](32-longest-valid-parentheses.js)
 
 ## 317. Shortest Distance from All Buildings
 
@@ -24,7 +56,7 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [LeetCode Submission](https://leetcode.com/submissions/detail/299878784)
 - [Solution](317-shortest-distance-from-all-buildings.js)
 
-# 416. Partition Equal Subset Sum
+## 416. Partition Equal Subset Sum
 
 - Time: 43 mins.
 - Time Complexity: O(N ^ 2) where N is length of input array, worst case.

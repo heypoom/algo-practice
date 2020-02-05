@@ -213,6 +213,7 @@ for explaining space complexity, you should count i, j, or visits variables as a
 ## 307. Range Sum Query Mutable
 
 - Vee: this is not the optimal solution na, but the optimal seems to be too difficult
+
   wondering why we need to `recompute(i - 1)` (why don't we just `recompute(i)`?)
 
 - Time Complexity:

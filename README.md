@@ -496,6 +496,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 
 ## Is the linked list a palindrome?
 
+- Vee: look good ja
+
 - Tags: Linked List
 
 - [Solution](ll-is-palindrome.js)
@@ -507,6 +509,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](ll-remove.js)
 
 ## De-duplicate a sorted linked list
+
+- Vee: incorrect na, try with this test case: `uniq(make(5, 4, 3, 3, 2, 1)))`. I suggest you initiate with `var node = root.next`  instead of `var node = root` that might be easier to handle the logic.
 
 - Tags: Linked List
 

@@ -166,6 +166,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## 41. First Missing Positive Integer
 
+- Vee: try to come up with constant space solution (you can check the solution or ask Pong, P'Nok, P'Neoi)
+
 - Time Complexity: O(N) where N is count of numbers
 
 - Space Complexity: O(N) where N is count of numbers (used for Map)
@@ -176,6 +178,12 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Find the longest common part tail of a linked list.
 
+- Vee: try to come up with constant space solution by not creating new node. you're almost there.
+
+  hint: instead of copying over the value, remember the head of the common and reset the head when you found that the elements are no longer common
+
+  for the test cases when you're having the interview, don't forget to cover all the edge cases na. (e.g. [null, null], [null, 1], etc.)
+
 - Time Complexity: O(max(A, B)) where A, B is the number of children nodes in the linked list
 
 - Tags: Linked List
@@ -184,6 +192,9 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution B](kth-to-last.js)
 
 ## Overlapping Intervals (Peak Visit Times in a Restaurant)
+
+- Vee: try with this test case still produces incorrect answer `getHighVisitTimes(2, 1, [[1, 2], [3, 4]])`
+for explaining space complexity, you should count i, j, or visits variables as an extra 'constant' space
 
 - Time Complexity: O(N) where N is the number of input intervals.
 
@@ -195,6 +206,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## 128. Longest Sequence of Consequtive Integers.
 
+- Vee: good ja
+
 - Time Complexity: O(N) where N is the length of the input array.
 
 - Space Complexity: O(N) where N is the length of the input array.
@@ -204,6 +217,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution](128-longest-sequence.js)
 
 ## 215. K Largest Element in Array (Quick Select)
+
+- Vee: good ja
 
 - Time Complexity: O(N) where N is the length of the input array, worst case.
 
@@ -229,6 +244,10 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## 307. Range Sum Query Mutable
 
+- Vee: this is not the optimal solution na, but the optimal seems to be too difficult
+
+  wondering why we need to `recompute(i - 1)` (why don't we just `recompute(i)`?)
+
 - Time Complexity:
   - O(N) where N is length of array, used in preprocessing and update.
   - O(1) for lookup
@@ -240,6 +259,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution](307-range-sum-query-mutable.js)
 
 ## 307p. Range Sum Query Static
+
+- Vee: good ja
 
 - Time Complexity:
   - O(N) where N is length of array, used in preprocessing.
@@ -265,6 +286,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Find Duplicate Integer in array 1..N where each value is <= N
 
+- Vee: good ja
+
 - Time Complexity: O(N) where N is the length of array.
 
 - Space Complexity: O(1)
@@ -274,6 +297,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution](find-duplicate-integer-in-array-when-each-value-is-leq-n.js)
 
 ## Implement merge sort.
+
+- Vee: good ja
 
 - Time Complexity: O(N log N)
 
@@ -429,6 +454,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Sum a linked list representation of two numbers.
 
+- Vee: incorrect. you forgot to reset `carry` value na. (try with `sum(make(9, 0, 9), make(9, 0, 9))` 909+909 = 1818)
+
 - Tags: Linked List
 
 - [Solution](ll-sum-list.js)
@@ -442,6 +469,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution](random-function-with-blacklist.js)
 
 ## Is String Permutation
+
+- Vee: looks good na. what about time/space complexity?
 
 - Tags: HashMap
 
@@ -463,11 +492,18 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Deduplicate a linked list.
 
+- Vee: The code does not look right/complete to me. Try to code on this na: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+  Don't forget the time and space complexity
+
 - Tags: Linked List
 
 - [Solution](ll-dedupe.js)
 
 ## Delete a middle node (not first and last) from a linked list.
+
+- Vee: good ja
+  follow up: maybe if you have time, try remove the middle node ((n/2)th node) in one go using 2 pointers method
+  hint: one pointer (`i`) moves one node at a time, another pointer (`j`) moves two node (skip every other one node) at the same time. when pointer `j` reaches the end of the list, pointer `i` will point to the n/2 node
 
 - Tags: Linked List
 
@@ -475,11 +511,15 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Insert a new node with an integer value of x after index i.
 
+- Vee: good ja
+
 - Tags: Linked List
 
 - [Solution](ll-insert.js)
 
 ## Get intersection of a linked list.
+
+- Vee: I think the code is correct. Can I ask time/space complexity for this algorithm? Can you make it faster by using more space?
 
 - Tags: Linked List
 
@@ -487,11 +527,15 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Invert a linked list.
 
+- Vee: good ja
+
 - Tags: Linked List
 
 - [Solution](ll-invert.js)
 
 ## Is the linked list a palindrome?
+
+- Vee: look good ja
 
 - Tags: Linked List
 
@@ -499,11 +543,15 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 
 ## Delete nth node from a linked list.
 
+- Vee: incorrect na. try with `removeAt(make(0, 1, 2, 3, 4, 5), 0)`
+
 - Tags: Linked List
 
 - [Solution](ll-remove.js)
 
 ## De-duplicate a sorted linked list
+
+- Vee: incorrect na, try with this test case: `uniq(make(5, 4, 3, 3, 2, 1)))`. I suggest you initiate with `var node = root.next`  instead of `var node = root` that might be easier to handle the logic.
 
 - Tags: Linked List
 
@@ -518,6 +566,8 @@ Note: I looked at the solution and tried to understand how it works. Didn't full
 - [Solution](longest-substring.js)
 
 ## Merge Sorted Array
+
+- Vee: look good ka. what about time/space complexity?
 
 - Tags: In Place, Two Pointers
 

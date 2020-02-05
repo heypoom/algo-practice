@@ -421,6 +421,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 
 ## Sum a linked list representation of two numbers.
 
+- Vee: incorrect. you forgot to reset `carry` value na. (try with `sum(make(9, 0, 9), make(9, 0, 9))` 909+909 = 1818)
+
 - Tags: Linked List
 
 - [Solution](ll-sum-list.js)
@@ -434,6 +436,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](random-function-with-blacklist.js)
 
 ## Is String Permutation
+
+- Vee: looks good na. what about time/space complexity?
 
 - Tags: HashMap
 
@@ -482,6 +486,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 
 ## Get intersection of a linked list.
 
+- Vee: I think the code is correct. Can I ask time/space complexity for this algorithm? Can you make it faster by using more space?
+
 - Tags: Linked List
 
 - [Solution](ll-intersect.js)
@@ -504,6 +510,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 
 ## Delete nth node from a linked list.
 
+- Vee: incorrect na. try with `removeAt(make(0, 1, 2, 3, 4, 5), 0)`
+
 - Tags: Linked List
 
 - [Solution](ll-remove.js)
@@ -525,6 +533,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](longest-substring.js)
 
 ## Merge Sorted Array
+
+- Vee: look good ka. what about time/space complexity?
 
 - Tags: In Place, Two Pointers
 

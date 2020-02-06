@@ -353,6 +353,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 
 ## Intersection of Two Arrays
 
+- Vee: hashmap looks good, but it can be better by covering duplicates numbers (A = [1,1] B = [1,2] result: [1]). what about time/space complexity?
+
 - Tags: Two Pointers, HashMap
 
 - [Solution using Two Pointers](intersection-arr.js)
@@ -374,6 +376,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](paren-perm.js)
 
 ## Move Zeros
+
+- Vee: good ja. time and space complexity?
 
 - Tags: In Place
 
@@ -412,6 +416,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](add-two-numbers-ll.js)
 
 ## Minimal Tree: Create a BST with minimal height.
+
+- Vee: good na
 
 - [Solution](minimal-tree-bst-minimal-height.js)
 
@@ -471,6 +477,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 
 ## Fibonacci
 
+- Vee: look good. time/space complexity for each method?
+
 - Tags: Dynamic Programming
 
 - [Solution](fib-dp.js)
@@ -482,6 +490,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](2d-map-traverse.js)
 
 ## Graph Traversal: DFS and BFS
+
+- Vee: look ok to me
 
 - Tags: Graph
 
@@ -524,6 +534,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](is-perm.js)
 
 ## Is Tree Balanced
+
+- Vee: good
 
 - Tags: Binary Tree
 

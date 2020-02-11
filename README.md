@@ -33,6 +33,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 ## 173. Binary Search Tree Iterator
 
+- Pong: All good
+
 - Time: 35 mins.
 - Time Complexity: O(N) for building the nodes array initially, O(1) for next and hasNext.
 - Space Complexity: O(N) where N is number of nodes in the tree, used for toring the nodes in an array.
@@ -43,6 +45,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [Solution](173-binary-search-tree-iterator.js)
 
 ## 253. Meeting Rooms II
+
+- Pong: All good
 
 - Time: 28 mins.
 - Time Complexity: O(N log N) where N is number of input intervals. O(N log N) is for sorting.
@@ -55,6 +59,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 ## 123. Best Time to Buy and Sell Stock III
 
+- Pong: All good
+
 - Time: 70 mins
 - Time Complexity: O(N) where N is the length of input array.
 - Space Complexity: O(1), no extra space.
@@ -65,6 +71,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [Solution](123-best-time-to-buy-and-sell-stock-iii.js)
 
 ## 543. Diameter of Binary Tree
+
+- Pong: All good
 
 - Time: 22 mins
 - Time Complexity: O(N) where N is count of nodes in the tree.
@@ -77,6 +85,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 ## 32. Longest Valid Parentheses
 
+- Pong: All good
+
 - Time: 48 mins.
 - Time Complexity: O(N) where N is string length
 - Space Complexity: O(N) where N is string length, used for stack array.
@@ -87,6 +97,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [Solution](32-longest-valid-parentheses.js)
 
 ## 317. Shortest Distance from All Buildings
+
+- Pong: All good. However, you can also define `H` as number of houses. It would gives better view on time complexity => `O(H x R x C)`.
 
 - Time: 56 mins
 - Time Complexity: O((R * C)^2), where R is row length and C is column length.
@@ -99,6 +111,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 ## 416. Partition Equal Subset Sum
 
+- Pong: All good. By the way, what's the space complexity?
+
 - Time: 43 mins.
 - Time Complexity: O(N ^ 2) where N is length of input array, worst case.
 
@@ -108,6 +122,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [Solution](416-can-partition.js)
 
 ## 124. Binary Tree Maximum Path Sum
+
+- Pong: All good
 
 - Time: 30 mins
 - Time Complexity: O(N) where N is amount of node in the tree.
@@ -120,6 +136,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 ## 133. Clone Graph
 
+- Pong: All good 
+
 - Time Complexity: O(V + E) where V is vertex count, and E is edge count.
 - Space Complexity: O(V) where V is vertex stored in the BFS queue.
 
@@ -130,6 +148,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [Solution](133-clone-graph.js)
 
 # 621. Task Scheduler
+
+- Pong: All good
 
 - Time: 30 mins.
 - Time Complexity: O(N) where N is the number of tasks given.
@@ -142,6 +162,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 
 ## 42. Trapping Rain Water
 
+- Pong: All good
+
 - Time Complexity: O(N) where N is the length of input height array.
 - Space Complexity: O(1), no additional space required.
 
@@ -151,6 +173,8 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - [Solution](42-trapping-rain-water.js)
 
 ## 15. Three Sum
+
+- Pong: All good
 
 - Time: 41 mins.
 - Time Complexity: O(N^2) where N is the length of input array.
@@ -349,6 +373,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 
 ## Intersection of Two Arrays
 
+- Vee: hashmap looks good, but it can be better by covering duplicates numbers (A = [1,1] B = [1,2] result: [1]). what about time/space complexity?
+
 - Tags: Two Pointers, HashMap
 
 - [Solution using Two Pointers](intersection-arr.js)
@@ -362,12 +388,16 @@ for explaining space complexity, you should count i, j, or visits variables as a
 
 ## Parenthesis Permutation
 
+- Pong: All good
+
 - Tags: Permutation, Recursion
 
 - [Efficient Solution](paren-perm-efficient.js)
 - [Solution](paren-perm.js)
 
 ## Move Zeros
+
+- Vee: good ja. time and space complexity?
 
 - Tags: In Place
 
@@ -406,6 +436,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](add-two-numbers-ll.js)
 
 ## Minimal Tree: Create a BST with minimal height.
+
+- Vee: good na
 
 - [Solution](minimal-tree-bst-minimal-height.js)
 
@@ -465,6 +497,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 
 ## Fibonacci
 
+- Vee: look good. time/space complexity for each method?
+
 - Tags: Dynamic Programming
 
 - [Solution](fib-dp.js)
@@ -476,6 +510,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](2d-map-traverse.js)
 
 ## Graph Traversal: DFS and BFS
+
+- Vee: look ok to me
 
 - Tags: Graph
 
@@ -518,6 +554,8 @@ for explaining space complexity, you should count i, j, or visits variables as a
 - [Solution](is-perm.js)
 
 ## Is Tree Balanced
+
+- Vee: good
 
 - Tags: Binary Tree
 

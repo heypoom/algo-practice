@@ -11,6 +11,26 @@ These took me **minimum of 30 minutes up to maximum of 1 hour**, and I can't fig
 - Course Schedule II
 - Minimum Window Substring
 
+## 56. Merge Intervals
+
+- Time: 26 mins
+- Time Complexity: O(N log N) where N is number of intervals, because interval is sorted.
+- Space Complexity: O(1), no additional space required.
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/302236032)
+- [Solution](56-merge-intervals.js)
+
+## 108. Convert Sorted Array to Binary Search Tree
+
+- Time: 15 mins
+- Time Complexity: O(N) where N is the number of nodes in the tree.
+- Space Complexity: O(N), memory is used for the recursive call stack.
+
+- [LeetCode Submission](https://leetcode.com/submissions/detail/302027494)
+- [Solution](108-sorted-array-to-bst.js)
+
+- Tags: Binary Tree, DFS
+
 ## 173. Binary Search Tree Iterator
 
 - Time: 35 mins.

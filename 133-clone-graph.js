@@ -1,4 +1,4 @@
-var cloneGraph = function(node) {
+function cloneGraph(node) {
   if (!node) return
 
   let map = new Map()

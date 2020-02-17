@@ -21,7 +21,11 @@ function trap(heights) {
 
     level = Math.max(level, lower)
     trapped += level - lower
+
+    console.log({l, r, lower, level, trapped})
   }
 
   return trapped
 }
+
+console.log(trap([4, 0, 1, 2, 1, 3, 0, 1, 0, 0, 2]))

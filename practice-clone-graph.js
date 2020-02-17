@@ -10,6 +10,7 @@ function cloneGraph(root) {
   // 2. Create a new cloned root.
   let newRoot = new Node(root.val)
   map.set(root, newRoot)
+
   // 3. BFS over the graph: for each child:
   // 3.1. if clone of child not exist, put the cloned node in map
   // 3.2. Then, get the cloned node in the map, and push the cloned child.

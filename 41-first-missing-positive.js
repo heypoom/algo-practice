@@ -1,21 +1,12 @@
 // Time Complexity: O(N) where N is count of numbers
 // Space Complexity: O(N) where N is count of numbers
 
-function firstMissing(input) {
-  let max = Math.max(...input)
-  let map = new Map()
-
-  for (let num of input) {
-    map.set(num, true)
+function firstMissingPositive(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] <= 0) nums[i] = nums.length + 1
   }
-
-  for (let i = 1; i <= max + 1; i++) {
-    if (!map.get(i)) return i
-  }
-
-  return null
 }
 
-console.log(firstMissing([1, 2, 0])) // 3
-console.log(firstMissing([3, 4, -1, 1])) // 2
-console.log(firstMissing([7, 8, 9, 11, 12])) // 1
+console.log(firstMissingPositive([1, 2, 0])) // 3
+console.log(firstMissingPositive([3, 4, -1, 1])) // 2
+console.log(firstMissingPositive([7, 8, 9, 11, 12])) // 1
